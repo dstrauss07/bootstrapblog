@@ -10,7 +10,7 @@
         crossorigin="anonymous">
 </head>
 
-<body>
+<body onload="populateArticle()">
     <header>
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -23,7 +23,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item close-sub dropdown">
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
                             Recent Articles
@@ -36,12 +36,12 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link close-sub" id="submenu-toggle" href="#" data-toggle="collapse" data-target="#submenu" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link" href="#" data-toggle="collapse" data-target="#submenu" aria-haspopup="true" aria-expanded="false">
                             Coding Articles
                             <span>&CircleDot;</span>
                         </a>
                     </li>
-                    <li class="nav-item close-sub dropdown">
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
                             Coding Projects
@@ -54,7 +54,7 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link close-sub dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
                             Comedy
                         </a>
@@ -67,24 +67,24 @@
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control close-sub mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn close-sub btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <button class="btn close-sub btn-success">Resume</button>
+                        <button class="btn btn-success">Resume</button>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link close-sub" href="#">GitHub</a>
+                        <a class="nav-link " href="#">GitHub</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link close-sub" href="#">Azure</a>
+                        <a class="nav-link" href="#">Azure</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link close-sub" href="#">LinkedIn</a>
+                        <a class="nav-link" href="#">LinkedIn</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link close-sub" href="#">Email</a>
+                        <a class="nav-link" href="#">Email</a>
                     </li>
                 </ul>
 
@@ -221,72 +221,15 @@
         </div>
     </header>
     <div class="row">
-        <main class="col-md-8 col-lg-9 bg-light p-5 close-sub">
+            <aside class="col-md-4 col-lg-3 p-3 text-center">
+                    <img class="img-fluid mx-auto" src="image/dave.jpg">
+                    </aside>
+        <main class="col-md-8 col-lg-9 bg-light p-5" id="article-area">
 
 
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pharetra urna in consectetur egestas. Maecenas
-                vulputate, dolor ac elementum ornare, lectus diam porttitor ligula, non faucibus justo purus ut diam. Suspendisse
-                dui arcu, semper et interdum et, convallis eget justo. Etiam sit amet posuere massa, non lacinia ex. In ut
-                sodales est, non accumsan leo. Sed ac augue et lacus laoreet lacinia. Nam quam sem, ornare a tortor quis,
-                dapibus egestas orci. Ut mattis posuere imperdiet. Donec maximus convallis ante blandit vestibulum. Mauris
-                non convallis lectus, a rutrum nunc. Phasellus tincidunt aliquet velit interdum euismod. Proin maximus tellus
-                a tempor vestibulum. In tincidunt est neque, et dignissim mauris vehicula imperdiet. Orci varius natoque
-                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam suscipit pellentesque neque ac interdum.
-            </p>
-            <p> Pellentesque tincidunt nunc vehicula felis pulvinar auctor. Phasellus malesuada erat eros, et condimentum sapien
-                finibus sit amet. Mauris sit amet diam libero. Aliquam vel scelerisque tellus. Curabitur velit mi, vestibulum
-                pulvinar facilisis scelerisque, dignissim eleifend nibh. Donec non purus turpis. Etiam ut posuere massa.
-                Sed in fringilla tortor. Nunc leo orci, ultricies eget odio in, maximus mollis purus. Integer pharetra purus
-                eget pharetra efficitur. Ut lacinia fermentum pellentesque. Vestibulum molestie, diam eu finibus condimentum,
-                magna dui fringilla eros, rutrum pretium tellus lectus ut nunc. Vestibulum pretium felis eros, at suscipit
-                sapien facilisis ac. Vivamus purus sapien, pharetra in eros id, vehicula lacinia justo. Etiam accumsan nisl
-                cursus tincidunt tincidunt. Etiam mollis arcu hendrerit, tempor tellus a, rutrum odio.
-            </p>
-            <p> In hac habitasse platea dictumst. Suspendisse commodo porta diam feugiat eleifend. Curabitur accumsan lorem sit
-                amet erat porttitor, lacinia fermentum sapien commodo. In rhoncus, metus at blandit auctor, leo odio faucibus
-                velit, quis mollis est metus nec diam. Nullam accumsan ante ultrices fermentum pharetra. Quisque at tortor
-                risus. Suspendisse non est at orci laoreet posuere vel ut est. Integer metus velit, porttitor nec libero
-                quis, rhoncus commodo dolor. Sed vestibulum lorem quis lacus condimentum, vitae venenatis risus mollis. Fusce
-                efficitur eros ac mollis maximus. Mauris consectetur sem enim, vitae molestie sapien venenatis vel. Cras
-                rhoncus placerat dolor. Nulla eget faucibus eros.
-            </p>
-            <p> Suspendisse est orci, cursus sed lectus eu, tristique aliquet odio. Curabitur id sollicitudin lacus, vitae tempor
-                est. Quisque vel laoreet massa. Phasellus viverra bibendum tristique. Donec ac risus sed purus rutrum dictum
-                ut sed sapien. Etiam fringilla elit et ligula hendrerit, sit amet tincidunt risus tempus. Ut congue libero
-                eget ipsum rhoncus posuere. Duis ut nisi ornare sem pretium accumsan. Aenean eget urna sit amet nulla fermentum
-                tempor a at ipsum.
-            </p>
-            <p> Quisque odio sapien, auctor et scelerisque eu, pulvinar ac nisl. Sed vulputate nisl lorem, a condimentum nisl
-                placerat eget. Mauris sit amet efficitur tortor, nec interdum nunc. Maecenas vestibulum mattis feugiat. In
-                vulputate neque nec nulla posuere, sit amet scelerisque diam pharetra. Nullam egestas odio in gravida mattis.
-                Integer commodo accumsan viverra. Etiam condimentum rhoncus dolor, ut consectetur justo feugiat a. Pellentesque
-                sodales lorem quis rutrum facilisis. Vestibulum nec lacinia sem, sit amet tincidunt ante. Nunc lacinia purus
-                at urna varius semper. Phasellus id eleifend enim. Sed non cursus eros, ut porttitor neque. Duis porttitor
-                elit vel suscipit efficitur. Nunc suscipit ipsum quis dolor rhoncus, vitae volutpat justo fringilla. Nunc
-                ut lectus malesuada, molestie ante sit amet, euismod dolor.
-            </p>
         </main>
-        <aside class="col-md-4 col-lg-3 bg-dark p-3 close-sub">
-            <p> Pellentesque tincidunt nunc vehicula felis pulvinar auctor. Phasellus malesuada erat eros, et condimentum sapien
-                finibus sit amet. Mauris sit amet diam libero. Aliquam vel scelerisque tellus. Curabitur velit mi, vestibulum
-                pulvinar facilisis scelerisque, dignissim eleifend nibh. Donec non purus turpis. Etiam ut posuere massa.
-                Sed in fringilla tortor. Nunc leo orci, ultricies eget odio in, maximus mollis purus. Integer pharetra purus
-                eget pharetra efficitur. Ut lacinia fermentum pellentesque. Vestibulum molestie, diam eu finibus condimentum,
-                magna dui fringilla eros, rutrum pretium tellus lectus ut nunc. Vestibulum pretium felis eros, at suscipit
-                sapien facilisis ac. Vivamus purus sapien, pharetra in eros id, vehicula lacinia justo. Etiam accumsan nisl
-                cursus tincidunt tincidunt. Etiam mollis arcu hendrerit, tempor tellus a, rutrum odio.
-            </p>
-            <p> In hac habitasse platea dictumst. Suspendisse commodo porta diam feugiat eleifend. Curabitur accumsan lorem sit
-                amet erat porttitor, lacinia fermentum sapien commodo. In rhoncus, metus at blandit auctor, leo odio faucibus
-                velit, quis mollis est metus nec diam. Nullam accumsan ante ultrices fermentum pharetra. Quisque at tortor
-                risus. Suspendisse non est at orci laoreet posuere vel ut est. Integer metus velit, porttitor nec libero
-                quis, rhoncus commodo dolor. Sed vestibulum lorem quis lacus condimentum, vitae venenatis risus mollis. Fusce
-                efficitur eros ac mollis maximus. Mauris consectetur sem enim, vitae molestie sapien venenatis vel. Cras
-                rhoncus placerat dolor. Nulla eget faucibus eros.
-            </p>
-        </aside>
     </div>
-    <footer class="footer close-sub">&copy;2018 David Strauss - Code Career Academy</footer>
+    <footer class="footer">&copy;2018 David Strauss - Code Career Academy</footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"

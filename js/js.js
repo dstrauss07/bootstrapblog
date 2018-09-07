@@ -1,14 +1,13 @@
 var subMenu = document.getElementById('submenu'),
-submenuToggle = document.getElementById('submenu-toggle'),
-closeSub = document.getElementsByClassName('close-sub');
+    articleArea = document.getElementById('article-area');
 
+subMenu.addEventListener("mouseleave", function () {
+    $('#submenu').collapse('toggle')
+})
 
-for(var i=0; i<closeSub.length; i++) {
-    closeSub[i].addEventListener('click', function(){
-        $('subMenu').on('shown.bs.collapse', function(){
-            this.hide.bs.collapse
-        })
-                                             }      
-                                                    }
-
-    )}
+function populateArticle() {
+    var article =
+        articleArea.innerHTML =  "<h1>" + "All About Dave" +  "</h1>" +
+        "<p>" +  "Dave is a pretty cool guy" + 
+        "</p>"
+    }
